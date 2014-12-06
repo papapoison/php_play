@@ -44,7 +44,7 @@
 					return $this->calculate(str_replace($match[0], $this->mod(intval($values[0][0]), intval($values[0][1])), $string));
 					break;
 				default:
-					return $this->checkLastOperands($string);;
+					return $this->checkLastOperands($string);
 			endswitch;
 		}
 
@@ -95,5 +95,5 @@
 	echo $calc->calculate("35 / 5") . '<br>'; // 7
 	echo $calc->calculate("1 + 5 * 8") . '<br>'; // 41
 	echo $calc->calculate("6 - 10 / 2 + 4 * 7") . '<br>'; // 29
-	echo $calc->calculate("6 % 3 * 5") //0;
+	echo $calc->calculate("6 % 3 * 5"); //0
 ?>
